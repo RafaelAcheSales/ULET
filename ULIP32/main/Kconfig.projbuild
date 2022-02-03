@@ -1,0 +1,17 @@
+menu "Select Ulip Model"
+    choice MODEL
+        prompt "Ulip Model"
+        default MLI_1WRF
+        help
+            Select ulip model to compile.
+
+        config MLI_1WRF
+            bool "WRF"
+            help
+                Model with RF433 RS485.
+        config MLI_1WRS
+            bool "WRS"
+            help
+                Model with RF433 Sensors.
+    endchoice
+endmenu
